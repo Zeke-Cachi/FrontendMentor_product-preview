@@ -1,0 +1,147 @@
+/* GENERAL STYLING */
+
+body {
+    background-color: #F3EAE3;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50rem;
+    max-height: 35rem;
+    border-radius: 15px;
+    background-color: white;
+    padding: 0;
+    margin: 18vh auto;
+}
+
+.background-image {
+    background-image: url(../img/image-product-desktop.jpg);
+    width: 25rem;
+    min-height: 35rem;
+    background-size: cover;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+
+/* FONTS */
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    line-height: 2.5rem;
+    padding-right: 2rem;
+}
+
+h6, p {
+    font-family: 'Montserrat', sans-serif;
+    color: #71727D;
+}
+
+h6 {
+    font-size: 0.9rem;
+    letter-spacing: 0.4rem;
+}
+
+.green-text {
+    font-family: 'Fraunces', serif;
+    color: #558172;
+    font-size: 2rem;
+}
+
+.add-to-cart {
+    color: white;
+}
+
+/* TEXT-POSITIONING */
+
+.text-div {
+    width: 25rem;
+    padding-right: 1rem;
+}
+
+.padding-p {
+    padding-right: 2.5rem;
+}
+
+.div-margins {
+    margin: 1rem 1rem 1.5rem 3rem;
+}
+
+.price-margins {
+    margin-left: 2rem;
+    text-decoration-line: line-through;
+}
+
+/* BUTTON */
+
+.btn {
+    background-color: #1A4031;
+    text-align: center;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    height: 4rem;
+}
+
+.btn:hover {
+    background-color: #5baa8d;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width:768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas: 
+        "bg-img"
+        "text"
+        "text";
+        width: 90vw;
+        min-width: 30vw;
+        margin: 2vh auto;
+    }
+
+    .background-image {
+        background-image: url(../img/image-product-mobile.jpg);
+        width: 90vw;
+        min-width: 30vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+        grid-area: bg-img;
+        border-top-right-radius: 15px;
+    }
+
+    .text-div {
+        margin: 0 auto;
+        background-color: white;
+        padding: 0;
+        width: 90vw;
+        min-width: 30vw;
+        grid-area: text;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .btn {
+        background-color: #3D8168;
+    }
+
+    h1 {
+        font-size: 2.4rem;
+        font-weight: 700;
+        padding-right: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
